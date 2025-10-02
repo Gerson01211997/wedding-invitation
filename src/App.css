@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Global section styles */
+.section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .section-content {
+    padding: 0 16px;
+  }
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #6B8EC7;
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-family: "Branch Regular", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  background-color: #5A7DB5;
+  transform: translateY(-2px);
+}
+
+.nav-hidden {
+  display: none; /* or transform: translateY(-100%); for a sliding effect */
+}
+
+.btn-secondary {
+  background-color: #A8C5E8;
+  color: #2C4A6B;
+  padding: 8px 24px 8px 8px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-family: "Branch Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+
+.btn-secondary:hover {
+  background-color: #94B8E3;
+  transform: translateY(-2px);
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  font-family: "Branch Regular", sans-serif;
+  font-weight: 500;
+  color: #2C4A6B;
+  margin-bottom: 10px;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(136, 136, 136, 0.1);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: "Branch Regular", sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #B3C5E8;
+}
+
+.form-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(136, 136, 136, 0.1);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: "Branch Regular", sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #B3C5E8;
+}
+
+/* Typography */
+.branch-title {
+  font-family: "Branch Regular", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.elegant-text {
+  font-family: "Branch Regular", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.body-text {
+  font-family: "Branch Regular", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+/* Colors */
+.text-primary {
+  color: #2C4A6B;
+}
+
+.text-secondary {
+  color: #5A7DB5;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #1A3A5C;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-serenity-light {
+  background-color: #E8F2FF;
+}
+
+.bg-serenity {
+  background-color: #B3C5E8;
+}
+
+.bg-serenity-dark {
+  background-color: #8FA8D3;
+}

@@ -1,0 +1,226 @@
+.ceremony-section {
+  background-color: #E8F2FF;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ceremony-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #E8F2FF 0%, #B3C5E8 100%);
+  z-index: -1;
+}
+
+.ceremony-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+ 
+}
+
+.ceremony-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+}
+
+.ceremony-details,
+.reception-details {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  padding: 0;
+}
+
+.reception-details {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 40px;
+}
+
+@font-face {
+  font-family: "Branch Regular";
+  src: url('https://framerusercontent.com/assets/nLhZG6CUqCDo8UsNwpYiFFQjcxU.woff2') format('woff2');
+  font-display: block;
+}
+
+.ceremony-title,
+.reception-title,
+.framer-text.ceremony-title {
+  color: #2C4A6B;
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.ceremony-info,
+.reception-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.info-icon {
+  color: #2C4A6B;
+  flex-shrink: 0;
+}
+
+.info-text {
+  flex: 1;
+  color: #2C4A6B;
+  text-align: left;
+}
+
+.info-text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+}
+
+.info-text strong {
+  font-weight: 800;
+}
+
+.confirmation-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(44, 74, 107, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin: 8px 0;
+  text-align: center;
+}
+
+.confirmation-icon {
+  color: #4A90E2;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmation-text {
+  color: #2C4A6B;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ceremony-cta,
+.reception-cta {
+  margin-top: 8px;
+}
+
+/* Side Image */
+.ceremony-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  height: 100%;
+}
+
+.ceremony-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .ceremony-section {
+    flex-direction: column;
+    height: min-content;
+    padding: 0;
+  }
+
+  .ceremony-container {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+   
+  }
+
+  .ceremony-content {
+    flex: none;
+    width: 100%;
+    height: min-content;
+    padding: 80px 24px;
+    justify-content: flex-start;
+  }
+
+  .ceremony-image {
+    flex: none;
+    width: 100%;
+    height: 500px;
+    padding: 0;
+  }
+
+  .ceremony-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .ceremony-title,
+  .reception-title {
+    --framer-font-size: 44px;
+  }
+
+  .ceremony-cta .btn-primary,
+  .reception-cta .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .confirmation-message {
+    margin: 12px 0;
+    padding: 10px 16px;
+  }
+
+  .confirmation-text {
+    font-size: 14px;
+  }
+}

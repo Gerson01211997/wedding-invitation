@@ -1,0 +1,48 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import './DressCode.css';
+
+const DressCode = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.1
+  });
+
+  return (
+    <section className="dresscode-section" id="dresscode" ref={ref}>
+      <div className="dresscode-container">
+        <div className="dresscode-content">
+          <motion.h2 
+            className="dresscode-title branch-title"
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.1, duration: 0.6 }}
+          >
+            Dress code
+          </motion.h2>
+
+          <div className="dresscode-details">
+            {/* Women's Dress Code */}
+            <motion.div 
+              className="dress-section"
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.2, duration: 0.6 }}
+            >
+              <div className="dress-header">
+                <h3 className="branch-title">Formal</h3>
+              </div>
+              <div className="dress-requirements">
+                <p>El blanco está reservado para la novia, </p>
+                <p>!nos encantará verte en otros colores!</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default DressCode;

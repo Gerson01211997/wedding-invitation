@@ -1,0 +1,261 @@
+.hero-section {
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../../public/photos/4.webp') 20% center/cover no-repeat;
+  z-index: -1;
+}
+
+/* Ticker Animation */
+.ticker-container {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  height: 42px;
+  overflow: hidden;
+  z-index: 11;
+}
+
+.ticker {
+  display: flex;
+  animation: scroll-ticker 20s linear infinite;
+  white-space: nowrap;
+}
+
+.ticker-item {
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 100px;
+  flex-shrink: 0;
+  font-family: "Branch Regular", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes scroll-ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Floating Photos */
+.floating-photo {
+  position: absolute;
+  border: 8px solid #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.floating-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-1 {
+  width: 195px;
+  height: 266px;
+  bottom: -5px;
+  right: 249px;
+}
+
+.photo-2 {
+  width: 220px;
+  height: 300px;
+  top: -58px;
+  left: 261px;
+}
+
+.photo-3 {
+  width: 400px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  box-shadow: 0.587723px 0.587723px 0.748049px rgba(83, 70, 57, 0),
+              1.43974px 1.43974px 1.83248px rgba(83, 70, 57, 0.03),
+              2.72809px 2.72809px 3.47229px rgba(83, 70, 57, 0.05),
+              4.76253px 4.76253px 6.06172px rgba(83, 70, 57, 0.1),
+              8.2889px 8.2889px 10.5501px rgba(83, 70, 57, 0.18),
+              15.1821px 15.1821px 19.3237px rgba(83, 70, 57, 0.33),
+              30px 30px 38.1838px rgba(83, 70, 57, 0.64);
+}
+
+/* Main Content */
+.hero-content {
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  padding: 0;
+}
+
+.hero-title {
+  font-size: 5.5rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+  font-family: "Branch Regular", serif;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.hero-date {
+  color: #ffffff;
+  backdrop-filter: blur(16px);
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  flex-flow: row;
+  flex: none;
+  place-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 16px 24px;
+  display: flex;
+  position: relative;
+  font-weight: 500;
+}
+
+/* Countdown */
+.countdown-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.countdown {
+  backdrop-filter: blur(16px);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  color: #ffffff;
+  font-family: "Branch Regular", sans-serif;
+  font-weight: 600;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.countdown-number {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.countdown-separator {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 8px;
+}
+
+/* CTA Button */
+.hero-cta {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .photo-1 {
+    width: 152px;
+    height: 207px;
+    bottom: 10%;
+    z-index: 10;
+    right: 60%;
+  }
+
+  .photo-2 {
+    width: 129px;
+    height: 176px;
+    top: 3%;
+    z-index: 10;
+    left: 70%;
+  }
+
+  .photo-3 {
+    width: 272px;
+    height: 400px;
+   
+    transform: translate(-50%, -60%) !important;
+  }
+
+  .countdown {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .countdown-number {
+    font-size: 18px;
+  }
+
+  .countdown-label {
+    font-size: 10px;
+  }
+
+  .countdown-separator {
+    font-size: 18px;
+  }
+
+  .ticker-container {
+    bottom: 74px;
+  }
+
+  .hero-cta {
+    bottom: 40px;
+  }
+}
