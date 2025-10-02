@@ -65,7 +65,7 @@ const Hero = () => {
         transition={{ delay: 0, duration: 0.6, ease: [0.44, 0, 0.56, 1] }}
       >
         <img 
-          src="/photos/12.webp" 
+          src="./photos/12.webp" 
           alt="Wedding couple" 
         />
       </motion.div>
@@ -77,7 +77,7 @@ const Hero = () => {
         transition={{ delay: 0.1, duration: 0.6, ease: [0.44, 0, 0.56, 1] }}
       >
         <img 
-          src="/photos/13.webp" 
+          src="./photos/13.webp" 
           alt="Wedding couple" 
         />
       </motion.div>
@@ -89,7 +89,7 @@ const Hero = () => {
         transition={{ delay: 0, duration: 0.6, ease: [0.44, 0, 0.56, 1] }}
       >
         <img 
-          src="/photos/6.webp" 
+          src="./photos/6.webp" 
           alt="Wedding couple" 
         />
       </motion.div>
