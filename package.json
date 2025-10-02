@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://tuusuario.github.io/nanachu-wedding-invitation",
+  "homepage": "https://gerson01211997.github.io/boda",
   "eslintConfig": {
     "extends": [
       "react-app",
