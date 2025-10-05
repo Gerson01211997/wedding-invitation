@@ -1,0 +1,168 @@
+.dresscode-section {
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dresscode-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+}
+
+.dresscode-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+}
+
+.dresscode-title {
+  font-size: 2.5rem;
+  color: #1A3A5C;
+  margin: 0 0 32px 0;
+  line-height: 1.2;
+  font-family: "Branch Regular", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+
+.dresscode-details {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.dress-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  border-bottom: 1px solid #B3C5E8;
+  padding-bottom: 24px;
+}
+
+.dress-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.dress-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dress-header h3 {
+  font-size: 1.8rem;
+  color: #2C4A6B;
+  margin: 0;
+  line-height: 1.2;
+  font-family: "Branch Regular", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.dress-subtitle {
+  font-size: 1.1rem;
+  color: #5A7DB5;
+  margin: 0;
+  font-weight: 500;
+  font-family: "Branch Regular", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.dress-requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.dress-requirements p {
+  margin: 0;
+  font-family: "Branch Regular", sans-serif;
+  font-size: 16px;
+  color: #2C4A6B;
+  line-height: 1.4;
+  max-width: 560px;
+  letter-spacing: 0.3px;
+}
+
+/* Side Image */
+.dresscode-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  height: 100%;
+}
+
+.dresscode-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .dresscode-section {
+    flex-direction: column;
+    height: min-content;
+    padding: 0;
+  }
+
+  .dresscode-container {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+
+  .dresscode-content {
+    flex: none;
+    width: 100%;
+    height: min-content;
+    padding: 80px 24px;
+    justify-content: flex-start;
+  }
+
+  .dresscode-image {
+    flex: none;
+    width: 100%;
+    height: 500px;
+    padding: 0;
+  }
+
+  .dresscode-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .dresscode-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .dress-header h3 {
+    font-size: 1.5rem;
+  }
+}

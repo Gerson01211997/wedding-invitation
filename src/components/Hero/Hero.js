@@ -65,7 +65,7 @@ const Hero = () => {
         transition={{ delay: 0, duration: 0.6, ease: [0.44, 0, 0.56, 1] }}
       >
         <img 
-          src="./photos/12.webp" 
+          src="https://gerson01211997.github.io/wedding-invitation/photos/12.webp" 
           alt="Wedding couple" 
         />
       </motion.div>
@@ -77,7 +77,7 @@ const Hero = () => {
         transition={{ delay: 0.1, duration: 0.6, ease: [0.44, 0, 0.56, 1] }}
       >
         <img 
-          src="./photos/13.webp" 
+          src="https://gerson01211997.github.io/wedding-invitation/photos/13.webp" 
           alt="Wedding couple" 
         />
       </motion.div>
@@ -89,7 +89,7 @@ const Hero = () => {
         transition={{ delay: 0, duration: 0.6, ease: [0.44, 0, 0.56, 1] }}
       >
         <img 
-          src="./photos/6.webp" 
+          src="https://gerson01211997.github.io/wedding-invitation/photos/6.webp" 
           alt="Wedding couple" 
         />
       </motion.div>
@@ -102,7 +102,23 @@ const Hero = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.4, ease: [0.44, 0, 0.56, 1] }}
         >
-          Gerson & Kathe
+          Gerson
+        </motion.h1>
+        <motion.h1 
+          className="hero-title branch-title"
+          initial={{ opacity: 0, y: 60 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.2, duration: 0.4, ease: [0.44, 0, 0.56, 1] }}
+        >
+          & 
+        </motion.h1>
+        <motion.h1 
+          className="hero-title branch-title"
+          initial={{ opacity: 0, y: 60 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.2, duration: 0.4, ease: [0.44, 0, 0.56, 1] }}
+        >
+          Kathe
         </motion.h1>
         
         <div className="hero-date">

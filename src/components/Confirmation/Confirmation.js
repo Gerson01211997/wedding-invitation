@@ -15,7 +15,7 @@ const Confirmation = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const galleryImages = Array.from({ length: 17 }, (_, index) => ({
-    src: `./photos/${index + 1}.webp`,
+    src: `https://gerson01211997.github.io/wedding-invitation/photos/${index + 1}.webp`,
     alt: `Wedding photo ${index + 1}`,
     width: 800,
     height: 600

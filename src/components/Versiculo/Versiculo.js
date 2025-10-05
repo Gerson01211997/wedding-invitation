@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './DressCode.css';
 
-const DressCode = () => {
+const Versiculo = () => {
   const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.1
@@ -19,10 +19,10 @@ const DressCode = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1, duration: 0.6 }}
           >
-            Dress code
+            "Por encima de todo, vístanse de amor, que es el vínculo perfecto"
           </motion.h2>
 
-          <div className="dresscode-details">
+          <div className="dresscode-details" sytle={{marginTop: "-10px"}}>
             {/* Women's Dress Code */}
             <motion.div 
               className="dress-section"
@@ -30,12 +30,11 @@ const DressCode = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <div className="dress-header">
-                <h3 className="branch-title">Formal</h3>
+              <div className="dress-requirements" >
+                <p>Colosenses 3:14 (NVI)</p>
               </div>
-              <div className="dress-requirements">
-                <p>El blanco está reservado para la novia, </p>
-                <p>¡nos encantará verte en otros colores!</p>
+              <div className="dress-requirements" >
+                <img src="../../../public/photos/svg.svg"/>
               </div>
             </motion.div>
           </div>
@@ -45,4 +44,4 @@ const DressCode = () => {
   );
 };
 
-export default DressCode;
+export default Versiculo;

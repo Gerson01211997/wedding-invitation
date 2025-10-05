@@ -100,7 +100,7 @@ const Ceremony = () => {
           transition={{ delay: 0.4, duration: 0.8, ease: [0.44, 0, 0.56, 1] }}
         >
           <img 
-            src="./photos/15.webp" 
+            src="https://gerson01211997.github.io/wedding-invitation/photos/15.webp" 
             alt="Wedding ceremony" 
           />
         </motion.div>

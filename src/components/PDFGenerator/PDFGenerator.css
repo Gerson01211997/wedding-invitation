@@ -1,0 +1,186 @@
+.pdf-generator {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-generator-container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem;
+}
+
+.pdf-generator-title {
+  text-align: center;
+  color: #8B4513;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-generator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pdf-generator-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2F4F4F;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.pdf-generator-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 120px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.pdf-generator-textarea:focus {
+  outline: none;
+  border-color: #DAA520;
+  box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.1);
+}
+
+.pdf-generator-textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.pdf-generator-info {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #DAA520;
+}
+
+.pdf-generator-info p {
+  margin: 0.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.pdf-generator-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pdf-generator-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pdf-generator-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pdf-generator-button-primary {
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+}
+
+.pdf-generator-button-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+}
+
+.pdf-generator-button-secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #868e96 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+}
+
+.pdf-generator-button-secondary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 117, 125, 0.4);
+}
+
+.pdf-generator-progress {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.pdf-generator-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.pdf-generator-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #DAA520 0%, #FFD700 100%);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.pdf-generator-progress p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pdf-generator {
+    padding: 1rem;
+  }
+  
+  .pdf-generator-container {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .pdf-generator-title {
+    font-size: 2rem;
+  }
+  
+  .pdf-generator-buttons {
+    flex-direction: column;
+  }
+  
+  .pdf-generator-button {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-generator-container {
+    padding: 1.5rem;
+  }
+  
+  .pdf-generator-title {
+    font-size: 1.8rem;
+  }
+}

@@ -25,12 +25,12 @@ const FAQ = () => {
     {
       id: 'parking',
       question: 'Parqueadero?',
-      answer: 'Es una calle poco transitada sin embargo, sugerimos lelgar en transporte alternativo. '
+      answer: 'Es una calle poco transitada sin embargo, sugerimos llegar en transporte alternativo. '
     },
     {
       id: 'colors',
       question: 'Colores reservados?',
-      answer: 'El blanco está reservado para la novia, sin embargo, nos encantará verte en otros colores!'
+      answer: 'El blanco'
     }
   ];
 
