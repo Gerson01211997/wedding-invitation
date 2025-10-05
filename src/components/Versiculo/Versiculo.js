@@ -34,7 +34,8 @@ const Versiculo = () => {
                 <p>Colosenses 3:14 (NVI)</p>
               </div>
               <div className="dress-requirements" >
-                <img src="../../../public/photos/svg.svg"/>
+                <img src="./photos/svg.svg" alt="test"/>
+                <img src="./photos/png.png" alt="test"/>
               </div>
             </motion.div>
           </div>
