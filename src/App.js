@@ -7,7 +7,7 @@ import Confirmation from './components/Confirmation/Confirmation';
 import DressCode from './components/DressCode/DressCode';
 // import InspirationBoard from './components/InspirationBoard/InspirationBoard';
 import FAQ from './components/FAQ/FAQ';
-import PDFGenerator from './components/PDFGenerator/PDFGenerator';
+// import PDFGenerator from './components/PDFGenerator/PDFGenerator';
 import Versiculo from './components/Versiculo/Versiculo';
 // import Footer from './components/Footer/Footer';
 
@@ -22,7 +22,7 @@ function App() {
       <DressCode />
       {/* <InspirationBoard /> */}
       <FAQ />
-      <PDFGenerator />
+      {/* <PDFGenerator /> */}
       {/* <Footer /> */}
     </div>
   );

@@ -22,7 +22,7 @@ const Versiculo = () => {
             "Por encima de todo, vístanse de amor, que es el vínculo perfecto"
           </motion.h2>
 
-          <div className="dresscode-details" sytle={{marginTop: "-10px"}}>
+          <div className="dresscode-details" style={{marginTop: "-10px"}}>
             {/* Women's Dress Code */}
             <motion.div 
               className="dress-section"
@@ -34,8 +34,7 @@ const Versiculo = () => {
                 <p>Colosenses 3:14 (NVI)</p>
               </div>
               <div className="dress-requirements" >
-                <img src="./photos/svg.svg" alt="test"/>
-                <img src="./photos/png.png" alt="test"/>
+                <img src="https://gerson01211997.github.io/wedding-invitation/photos/png.png" alt="test" width="65px"/>
               </div>
             </motion.div>
           </div>
