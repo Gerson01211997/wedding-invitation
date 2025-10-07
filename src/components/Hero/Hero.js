@@ -102,7 +102,7 @@ const Hero = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.4, ease: [0.44, 0, 0.56, 1] }}
         >
-          Gerson
+          Kathe
         </motion.h1>
         <motion.h1 
           className="hero-title branch-title"
@@ -118,7 +118,7 @@ const Hero = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.4, ease: [0.44, 0, 0.56, 1] }}
         >
-          Kathe
+          Gerson
         </motion.h1>
         
         <div className="hero-date">

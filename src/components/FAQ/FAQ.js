@@ -19,7 +19,7 @@ const FAQ = () => {
     },
     {
       id: 'children',
-      question: '¿Estarán permitidos los niños?',
+      question: 'Estarán permitidos los niños?',
       answer: 'Amamos a los niños, pero en esta ocasión deseamos que los papás se relajen y disfruten con nosotros, por eso la celebración será únicamente para adultos.'
     },
     {

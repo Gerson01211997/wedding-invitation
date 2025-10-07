@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;500&display=swap");
+
 .hero-section {
   height: 100vh;
   background-color: #ffffff;
@@ -16,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../../public/photos/4.webp') 20% center/cover no-repeat;
+  background: url("../../../public/photos/4.webp") 20% center/cover no-repeat;
   z-index: -1;
 }
 
@@ -42,7 +44,8 @@
   color: #ffffff;
   margin-right: 100px;
   flex-shrink: 0;
-  font-family: "Branch Regular", sans-serif;
+  font-family: "Parisienne", cursive;
+
   font-weight: 600;
   letter-spacing: 0.5px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
@@ -94,12 +97,12 @@
   left: 50%;
   transform: translate(-50%, -50%) !important;
   box-shadow: 0.587723px 0.587723px 0.748049px rgba(83, 70, 57, 0),
-              1.43974px 1.43974px 1.83248px rgba(83, 70, 57, 0.03),
-              2.72809px 2.72809px 3.47229px rgba(83, 70, 57, 0.05),
-              4.76253px 4.76253px 6.06172px rgba(83, 70, 57, 0.1),
-              8.2889px 8.2889px 10.5501px rgba(83, 70, 57, 0.18),
-              15.1821px 15.1821px 19.3237px rgba(83, 70, 57, 0.33),
-              30px 30px 38.1838px rgba(83, 70, 57, 0.64);
+    1.43974px 1.43974px 1.83248px rgba(83, 70, 57, 0.03),
+    2.72809px 2.72809px 3.47229px rgba(83, 70, 57, 0.05),
+    4.76253px 4.76253px 6.06172px rgba(83, 70, 57, 0.1),
+    8.2889px 8.2889px 10.5501px rgba(83, 70, 57, 0.18),
+    15.1821px 15.1821px 19.3237px rgba(83, 70, 57, 0.33),
+    30px 30px 38.1838px rgba(83, 70, 57, 0.64);
 }
 
 /* Main Content */
@@ -118,7 +121,8 @@
   text-align: center;
   line-height: 1.2;
   margin: 0;
-  font-family: "Branch Regular", serif;
+  font-family: "Parisienne", cursive;
+
   font-weight: 700;
   font-style: italic;
   letter-spacing: 3px;
@@ -162,7 +166,8 @@
   align-items: center;
   gap: 0;
   color: #ffffff;
-  font-family: "Branch Regular", sans-serif;
+  font-family: "Parisienne", cursive;
+
   font-weight: 600;
 }
 
@@ -229,7 +234,7 @@
   .photo-3 {
     width: 272px;
     height: 400px;
-   
+
     transform: translate(-50%, -60%) !important;
   }
 

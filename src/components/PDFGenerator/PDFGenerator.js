@@ -1878,13 +1878,13 @@ import React from "react";
 import jsPDF from "jspdf";
 
 const WeddingPDFGenerator = () => {
-  const imageUrl = "https://gerson01211997.github.io/wedding-invitation/photos/13.webp";
-  const linkUrl =" "
+  const imageUrl = "./photos/invitacion_boda.png";
+  const linkUrl ="https://gerson01211997.github.io/wedding-invitation/"
   const generatePDF = () => {
     const pdf = new jsPDF({
       orientation: "portrait",
       unit: "px",
-      format: [400, 600], // tamaño personalizado similar al diseño original
+      format: [400, 700], // tamaño personalizado similar al diseño original
     });
 
     // Cargar la imagen como fondo
@@ -1893,7 +1893,7 @@ const WeddingPDFGenerator = () => {
     img.src = imageUrl;
 
     img.onload = () => {
-      pdf.addImage(img, "PNG", 0, 0, 400, 600);
+      pdf.addImage(img, "PNG", 0, 0, 400, 700);
 
       // Puedes agregar texto opcional si quieres
       // pdf.setFont("helvetica", "bold");
@@ -1901,14 +1901,14 @@ const WeddingPDFGenerator = () => {
       // pdf.text("¡Nos casamos!", 140, 60);
            // Rectángulo clickeable (posición provisional)
       const x = 120; // posición X
-      const y = 520; // posición Y
+      const y = 625; // posición Y
       const width = 160; // ancho
-      const height = 40; // alto
+      const height = 45; // alto
 
       // Dibujar borde visible (luego puedes quitarlo)
-      pdf.setDrawColor(255, 0, 0);
-      pdf.setLineWidth(1);
-      pdf.rect(x, y, width, height);
+      pdf.setDrawColor('#8FA8D3'); // ← borde transparente
+      pdf.rect(x, y, width, height); // crea el borde (invisible)
+      // pdf.rect(x, y, width, height);
 
       // Añadir enlace sobre el área
       pdf.link(x, y, width, height, { url: linkUrl });
