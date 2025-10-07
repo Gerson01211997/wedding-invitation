@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación de Boda</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;500&display=swap');
+
+    body {
+      background-color: #bfa296;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .invitation-card {
+      width: 400px;
+      background: #fbe5da;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+      color: #6e4e43;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      padding-bottom: 30px;
+    }
+
+    .photo-section {
+      position: relative;
+      height: 350px;
+      overflow: hidden;
+    }
+
+    .photo-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo-mask {
+      position: absolute;
+      bottom: -1px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent 60%, #fbe5da 100%);
+      clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0% 100%);
+    }
+
+    .content {
+      padding: 20px 30px 0;
+      position: relative;
+    }
+
+    .subtitle {
+      letter-spacing: 1px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #9b7b6b;
+    }
+
+    .names {
+      font-family: 'Parisienne', cursive;
+      font-size: 36px;
+      margin: 0 0 15px;
+      color: #6e4e43;
+    }
+
+    .date-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .date-box span {
+      font-size: 14px;
+      color: #6e4e43;
+      letter-spacing: 1px;
+    }
+
+    .date-box .day {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .save-date {
+      font-family: 'Parisienne', cursive;
+      font-size: 26px;
+      margin: 15px 0;
+      color: #7a5c4f;
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #7a5c4f;
+      margin-top: 10px;
+    }
+
+    .button-link {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #d2a48d;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 10px 30px;
+      border-radius: 30px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .button-link:hover {
+      background-color: #b68a74;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+   
+  </style>
+</head>
+<body>
+  <div class="invitation-card">
+    <div class="photo-section">
+      <img src="https://gerson01211997.github.io/wedding-invitation/photos/13.webp" alt="Foto de los novios" />
+      <div class="photo-mask"></div>
+    </div>
+
+    <div class="content">
+      <p class="subtitle">¡Nos casamos!</p>
+      <h1 class="names">Gerson & Kathe</h1>
+
+      <div class="date-box">
+        <span class="month">Noviembre</span>
+        <span class="day">15</span>
+        <span class="year">2025</span>
+      </div>
+
+      <h2 class="save-date">Cupos: 2</h2>
+
+      <a
+        href="https://gerson01211997.github.io/wedding-invitation/"
+        class="button-link"
+        target="_blank"
+      >
+        Ver invitación
+      </a>
+    </div>
+  </div>
+</body>
+</html>
