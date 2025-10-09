@@ -43,7 +43,7 @@
       background-color: #ccc; /* por si la imagen no carga */
     }
 
-    .photo-section img {
+    .photo-section .novios {
       min-width: 100%;
       min-height: 100%;
       /* flex-shrink: 0; */
@@ -117,6 +117,8 @@
       border-radius: 30px;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
+      border: 2px solid;
+      border-color: #FFF;
     }
 
     .button-link:hover {
@@ -134,6 +136,7 @@
       cursor: pointer;
       font-size: 14px;
       font-weight: bold;
+     
     }
 
     button:hover {
@@ -179,24 +182,13 @@ z-index: 9999;
 
   <div class="invitation-card" id="invitation-card">
     <div class="photo-section">
-      <img src="https://gerson01211997.github.io/wedding-invitation/photos/13.webp" alt="Foto de los novios" />
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none" class="wave-line-svg">
-        <path
-          fill="none"
-          stroke="#d4ecef"
-          stroke-width="3"
-          stroke-linecap="round"
-          d="M0,60
-             C100,55 200,85 300,60 
-             C380,45 420,75 460,60
-             C500,45 540,25 580,60
-             C600,80 640,95 680,60
-             C720,25 760,40 800,60
-             C840,80 880,95 920,60
-             C960,25 1040,45 1120,60
-             C1200,75 1320,85 1440,60"
-        />
-      </svg>
+      <img src="https://gerson01211997.github.io/wedding-invitation/photos/13.webp" alt="Foto de los novios" class="novios"/>
+      <img
+      class="wave-line-svg"
+      src="file:///C:/test/test/public/photos/wave.png"
+      alt="Wave line"
+    />
+    
       
       
       <div class="photo-mask"></div>
