@@ -27,6 +27,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://gerson01211997.github.io/wedding-invitation",
   "eslintConfig": {
     "extends": [
       "react-app",
