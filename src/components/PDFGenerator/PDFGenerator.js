@@ -1878,8 +1878,8 @@ import React from "react";
 import jsPDF from "jspdf";
 
 const WeddingPDFGenerator = () => {
-  const imageUrl = "./photos/2-cupos.png";
-  const linkUrl ="https://gerson01211997.github.io/wedding-invitation/"
+  const imageUrl = "./photos/invitaciones/Boda_Kathe&Gerson_4.png";
+  const linkUrl ="https://gerson01211997.github.io/wedding-invitation"
   const generatePDF = () => {
     const pdf = new jsPDF({
       orientation: "portrait",
@@ -1900,9 +1900,9 @@ const WeddingPDFGenerator = () => {
       // pdf.setFontSize(16);
       // pdf.text("¡Nos casamos!", 140, 60);
            // Rectángulo clickeable (posición provisional)
-      const x = 120; // posición X
+      const x = 105; // posición X
       const y = 625; // posición Y
-      const width = 160; // ancho
+      const width = 190; // ancho
       const height = 45; // alto
 
       // Dibujar borde visible (luego puedes quitarlo)
@@ -1913,7 +1913,7 @@ const WeddingPDFGenerator = () => {
       // Añadir enlace sobre el área
       pdf.link(x, y, width, height, { url: linkUrl });
 
-      pdf.save("invitacion.pdf");
+      pdf.save("Boda_Kathe&Gerson_4.pdf");
     };
 
     img.onerror = () => {
