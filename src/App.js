@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, useLocation } from 'react-router-dom';
 
 import Hero from './components/Hero/Hero';
 // import Family from './components/Family/Family';
@@ -13,40 +13,45 @@ import FAQ from './components/FAQ/FAQ';
 import Versiculo from './components/Versiculo/Versiculo';
 // import Footer from './components/Footer/Footer';
 
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
+
+function Home() {
+  const query = useQuery();
+
+  const view = query.get('view');
+  if (view === 'participacion') {
+    return (
+      <>
+        <Hero />
+        <Versiculo />
+        <Confirmation />
+      </>
+    );
+  }
+
+  return (
+    <>
+      <Hero />
+      {/* <Family /> */}
+      <Ceremony />
+      <Versiculo />
+      <Confirmation />
+      <DressCode />
+      {/* <InspirationBoard /> */}
+      <FAQ />
+      {/* <PDFGenerator /> */}
+      {/* <Footer /> */}
+    </>
+  );
+}
+
 function App() {
   return (
     <div className="App">
-      <Router >
-        <Routes>
-          <Route
-            path="/wedding-invitation"
-            element={
-              <>
-                <Hero />
-                {/* <Family /> */}
-                <Ceremony />
-                <Versiculo />
-                <Confirmation />
-                <DressCode />
-                {/* <InspirationBoard /> */}
-                <FAQ />
-                {/* <PDFGenerator /> */}
-                {/* <Footer /> */}
-              </>
-            }
-          />
-
-          <Route
-            path="/wedding-participation"
-            element={
-              <>
-                <Hero />
-                <Versiculo />
-                <Confirmation />
-              </>
-            }
-          />
-        </Routes>
+      <Router>
+        <Home />
       </Router>
     </div>
   );
