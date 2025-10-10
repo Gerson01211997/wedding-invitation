@@ -1878,7 +1878,7 @@ import React from "react";
 import jsPDF from "jspdf";
 
 const WeddingPDFGenerator = () => {
-  const imageUrl = "./photos/invitacion_boda.png";
+  const imageUrl = "./photos/2-cupos.png";
   const linkUrl ="https://gerson01211997.github.io/wedding-invitation/"
   const generatePDF = () => {
     const pdf = new jsPDF({

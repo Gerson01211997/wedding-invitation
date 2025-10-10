@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Hero from './components/Hero/Hero';
 // import Family from './components/Family/Family';
 import Ceremony from './components/Ceremony/Ceremony';
@@ -14,16 +16,38 @@ import Versiculo from './components/Versiculo/Versiculo';
 function App() {
   return (
     <div className="App">
-      <Hero />
-      {/* <Family /> */}
-      <Ceremony />
-      <Versiculo/>
-      <Confirmation />
-      <DressCode />
-      {/* <InspirationBoard /> */}
-      <FAQ />
-      {/* <PDFGenerator /> */}
-      {/* <Footer /> */}
+      <Router >
+        <Routes>
+          <Route
+            path="/wedding-invitation"
+            element={
+              <>
+                <Hero />
+                {/* <Family /> */}
+                <Ceremony />
+                <Versiculo />
+                <Confirmation />
+                <DressCode />
+                {/* <InspirationBoard /> */}
+                <FAQ />
+                {/* <PDFGenerator /> */}
+                {/* <Footer /> */}
+              </>
+            }
+          />
+
+          <Route
+            path="/wedding-participation"
+            element={
+              <>
+                <Hero />
+                <Versiculo />
+                <Confirmation />
+              </>
+            }
+          />
+        </Routes>
+      </Router>
     </div>
   );
 }
