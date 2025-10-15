@@ -25,7 +25,7 @@ const FAQ = () => {
     {
       id: 'parking',
       question: '¿Parqueadero?',
-      answer: 'Es una calle poco transitada sin embargo, sugerimos llegar en transporte alternativo '
+      answer: 'El lugar cuenta con parqueadero externo e interno, siéntete libre de ir con tu vehículo'
     },
     {
       id: 'colors',

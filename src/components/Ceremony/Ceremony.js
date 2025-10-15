@@ -52,7 +52,10 @@ const Ceremony = () => {
                   </svg>
                 </div>
                 <div className="info-text">
-                  <p><strong>Lugar:</strong> Salón de eventos Sabana Imperial</p>
+                  <p><strong>Lugar:</strong> Salón de eventos la montañita</p>
+                </div>
+                <div className="info-text">
+                  <p><strong>Dirección:</strong> Calle 25 con Cra 13E ESQUINA - Sincelejo, Barrio Mochila</p>
                 </div>
               </div>
             </motion.div>
@@ -66,7 +69,7 @@ const Ceremony = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
             >
               <a 
-                href="https://maps.app.goo.gl/dcYiaXWSqSqfozFZ6"
+                href="https://www.google.com/maps/dir//Cancha+Sint%C3%A9tica+La+Monta%C3%B1ita,+Restaurante,+Comidas+R%C3%A1pidas+y+Eventos,+Calle+25+con+Cra+13E+ESQUINA+Barrio+Mochila,+Sincelejo,+Sucre/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8e59156bb37535f7:0xe6a48efbb99c37e9?sa=X&ved=1t:57443&ictx=111"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
