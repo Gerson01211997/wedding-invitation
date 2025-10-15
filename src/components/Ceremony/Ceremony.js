@@ -1,12 +1,12 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import './Ceremony.css';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import "./Ceremony.css";
 
 const Ceremony = () => {
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   return (
@@ -17,7 +17,7 @@ const Ceremony = () => {
         <div className="ceremony-content">
           {/* Ceremony Details */}
           <div className="ceremony-details">
-            <motion.h2 
+            <motion.h2
               className="ceremony-title"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -25,8 +25,8 @@ const Ceremony = () => {
             >
               Ceremonia y recepción
             </motion.h2>
-            
-            <motion.div 
+
+            <motion.div
               className="ceremony-info"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -35,40 +35,75 @@ const Ceremony = () => {
               <div className="info-item">
                 <div className="info-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-                    <polyline points="12,6 12,12 16,14" stroke="currentColor" strokeWidth="2"/>
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
+                    <polyline
+                      points="12,6 12,12 16,14"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
                   </svg>
                 </div>
                 <div className="info-text">
-                  <p><strong>Hora:</strong> 6:30 pm</p>
+                  <p>
+                    <strong>Hora:</strong> 6:30 pm
+                  </p>
                 </div>
               </div>
 
               <div className="info-item">
                 <div className="info-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" strokeWidth="2" />
-                    <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="2"/>
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
+                    <circle
+                      cx="12"
+                      cy="10"
+                      r="3"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
                   </svg>
                 </div>
                 <div className="info-text">
-                  <p><strong>Lugar:</strong> Salón de eventos la montañita</p>
+                  <p>
+                    <strong>Lugar:</strong> Salón de eventos la montañita
+                  </p>
                 </div>
               </div>
               <div className="info-item">
                 <div className="info-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" strokeWidth="2" />
-                    <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="2"/>
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
+                    <circle
+                      cx="12"
+                      cy="10"
+                      r="3"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    />
                   </svg>
                 </div>
                 <div className="info-text">
-                  <p><strong>Dirección:</strong> Calle 25 con Cra 13E ESQUINA - Sincelejo, Barrio Mochila</p>
+                  <p>
+                    <strong>Dirección:</strong> Calle 25 con Cra 13E ESQUINA -
+                    Sincelejo, Barrio Mochila
+                  </p>
                 </div>
               </div>
             </motion.div>
-
-           
 
             <motion.div
               className="ceremony-cta"
@@ -76,7 +111,7 @@ const Ceremony = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              <a 
+              <a
                 href="https://www.google.com/maps/dir//Cancha+Sint%C3%A9tica+La+Monta%C3%B1ita,+Restaurante,+Comidas+R%C3%A1pidas+y+Eventos,+Calle+25+con+Cra+13E+ESQUINA+Barrio+Mochila,+Sincelejo,+Sucre/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8e59156bb37535f7:0xe6a48efbb99c37e9?sa=X&ved=1t:57443&ictx=111"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -93,7 +128,13 @@ const Ceremony = () => {
             >
               <div className="confirmation-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </div>
               <p className="confirmation-text">
@@ -104,15 +145,15 @@ const Ceremony = () => {
         </div>
 
         {/* Side Image */}
-        <motion.div 
+        <motion.div
           className="ceremony-image"
           initial={{ opacity: 0, x: 670, scale: 1.3, rotateY: 90 }}
           animate={inView ? { opacity: 1, x: 0, scale: 1, rotateY: 0 } : {}}
           transition={{ delay: 0.4, duration: 0.8, ease: [0.44, 0, 0.56, 1] }}
         >
-          <img 
-            src="https://gerson01211997.github.io/wedding-invitation/photos/15.webp" 
-            alt="Wedding ceremony" 
+          <img
+            src="https://gerson01211997.github.io/wedding-invitation/photos/15.webp"
+            alt="Wedding ceremony"
           />
         </motion.div>
       </div>
