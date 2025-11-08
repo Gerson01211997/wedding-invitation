@@ -12,6 +12,8 @@ import FAQ from './components/FAQ/FAQ';
 // import PDFGenerator from './components/PDFGenerator/PDFGenerator';
 import Versiculo from './components/Versiculo/Versiculo';
 // import Footer from './components/Footer/Footer';
+import Participation from './components/Participation/Participation';
+
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -25,6 +27,8 @@ function Home() {
     return (
       <>
         <Hero />
+        <Participation />
+
         <Versiculo />
         <Confirmation />
       </>
