@@ -23,7 +23,7 @@ const Participation = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1, duration: 0.6 }}
             >
-              Con la bendición de Dios unimos nuestras vidas en matrimonio, agradecidos por su amor y fidelidad. Aunque no puedan acompañarnos, su cariño y oraciones son parte de esta alegría que Él nos concede.
+              Con gratitud y alegría, comparto con ustedes esta unión familiar bajo la bendición de Dios, agradeciendo su cariño y buenos deseos en este momento tan especial.
 
             </motion.h2>
 
